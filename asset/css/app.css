@@ -1,0 +1,56 @@
+/* body */
+html,body{
+    background-color: #e9ebee;
+}
+/* style login */
+.container-login{
+    height: 100vh;
+    background-image: linear-gradient(to right top, #2e553e, #257443, #189342, #0db33a, #1cd324);
+    display:flex;
+    align-items:center;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.form-login{
+    margin: 0 auto;
+}
+.btn-cost{
+    background-image: linear-gradient(to right top, #10833e, #0a9c41, #0eb641, #1cd03f, #30eb38);
+    color: #ffffff;
+    border-color: #f8f9fa;
+}
+
+/* navbar */
+.container{
+    width: 70% !important ;
+}
+a.nav-link {
+    /* text-decoration: none; */
+    color: #fff;
+}
+
+
+
+.navbar-light .navbar-nav .nav-link  {
+    color: #ffffff;
+}
+.navbar-light .navbar-brand {
+    color: #fff;
+}
+/* home */
+.home-bg{
+    /* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
+    background-color: #fff;
+    padding-top: 30px;
+    border: 1px solid #dddfe2;
+}
+nav.navbar.navbar-expand-sm {
+    background-color: #69a23b;
+}
+.card-header-cos{
+    background-color: #69a23b;
+    color: #fff;
+};

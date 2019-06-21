@@ -12,6 +12,7 @@ $data =read("SELECT id,nama_lengkap,nip FROM pegawai");
 			</div>
 		</div>
 		<div class="card">
+			<div class="card-header">Form Absensi</div>
 			<div class="card-body">
 				<form method="post" action="proses_absen.php">
 					<div class="row">

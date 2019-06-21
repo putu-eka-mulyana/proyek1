@@ -28,4 +28,12 @@
         return $rows;
         mysqli_close($con);
     }
+    function cek_id($value){
+    global $con;
+    $query= "SELECT * FROM gajih WHERE pegawai_id='$value'";
+    if($result = mysqli_query($con,$query)){
+        if(mysqli_num_rows($result)!= 0 ) return true;
+        else return false;
+    }   
+}
 ?>

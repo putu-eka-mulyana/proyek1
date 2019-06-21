@@ -43,9 +43,10 @@
                                 <td><?=$d[8]?></td>
                                 <td><?=$d[9]?></td>
                                 <td><?=$d[10]?></td>
-                                <td><?=$d[13]?></td>
+                                <td><?=$d[14]?></td>
                                 <td>
                                     <a href="hapus_pegawai.php?id=<?=$d[0]?>" class="btn btn-danger" onClick="return confirm('yakin mau menghapus')">Hapus</a>
+                                    <a href="edit_pegawai.php?id=<?=$d[0]?>" class="btn btn-warning" >Edit</a>
                                 </td>
                             </tr>
                             <?php

@@ -10,6 +10,7 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="add_pegawai.php">Tambah Data Pegawai</a>
           <a class="dropdown-item" href="tampil_pegawai.php">Lihat Data Pegawai</a>
+          <a class="dropdown-item" href="tampil_gajih.php">Lihat Data Gajih</a>
         </div>
       </li>
       <li class="nav-item">

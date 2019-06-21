@@ -24,6 +24,7 @@
                                 <th scope="col">Status Pernikahan</th>
                                 <th scope="col">Status Kerja</th>
                                 <th scope="col">Jabatan</th>
+                                <th scope="col">Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -43,6 +44,9 @@
                                 <td><?=$d[9]?></td>
                                 <td><?=$d[10]?></td>
                                 <td><?=$d[13]?></td>
+                                <td>
+                                    <a href="hapus_pegawai.php?id=<?=$d[0]?>" class="btn btn-danger" onClick="return confirm('yakin mau menghapus')">Hapus</a>
+                                </td>
                             </tr>
                             <?php
                             $no++; 

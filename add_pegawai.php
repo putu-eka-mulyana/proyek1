@@ -12,7 +12,7 @@ $data =read('SELECT * FROM jabatan');
                         Form Tambah Pegawai
                     </div>
                     <div class="card-body">
-                        <form action="proses/proses_pegawai.php" method="post">
+                        <form action="proses_pegawai.php" method="post">
                             <div class="form-group">
                                 <label for="nip">NIP Pegawai</label>
                                 <input type="text" name="nip" id="nip" class="form-control" placeholder="Nip">

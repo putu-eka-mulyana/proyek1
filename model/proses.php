@@ -13,7 +13,7 @@
     function insert($query) {
         global $con;
         mysqli_query($con, $query); 
-        die( mysqli_error($con));
+        // die( mysqli_error($con));
         return mysqli_affected_rows($con);
     }
     function read($query){

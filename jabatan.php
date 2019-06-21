@@ -9,7 +9,7 @@ include "header.php";
             <div class="col-md-11">
                 <div class="card">
                     <div class="card-body">
-                        <form action="proses/tambah_jabatan.php" method="post">
+                        <form action="tambah_jabatan.php" method="post">
                             <div class="form-group row">
                                 <label for="jabatan" class="col-sm-3 col-form-label">Tambah Jabatan</label>
                                 <div class="col-sm-9">
@@ -41,8 +41,8 @@ include "header.php";
                                 <td><?=$d[1]?></td>
                                 <td><?=$d[2]?></td>
                                 <td>
-                                    <a href="proses/hapus_pegawai.php?id=<?=$id?>" class="btn btn-danger">Hapus</a>
-                                    
+                                    <a href="hapus_jabatan.php?id=<?=$d[0]?>" class="btn btn-danger" onClick="return confirm('yakin mau menghapus')">Hapus</a>
+                                    <a href="edit_jabatan.php?id=<?=$d[0]?>" class="btn btn-danger" >Edit</a>
                                 </td>
                             </tr>
                             <?php

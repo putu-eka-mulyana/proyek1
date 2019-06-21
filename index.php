@@ -1,4 +1,8 @@
 <?php
+session_start();
+if(!isset($_SESSION["username"])){
+    header("Location:login.php");
+}
 include "header.php";
 include "model/proses.php";
 $data =read("SELECT id,nama_lengkap,nip FROM pegawai");

@@ -1,4 +1,8 @@
 <?php 
+session_start();
+if(!isset($_SESSION["username"])){
+    header("Location:login.php");
+}
 include "model/proses.php";
 $nip                = $_POST['nip'];
 $nama               = $_POST['nama'];

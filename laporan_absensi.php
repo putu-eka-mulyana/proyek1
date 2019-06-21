@@ -1,4 +1,8 @@
 <?php
+session_start();
+if(!isset($_SESSION["username"])){
+    header("Location:login.php");
+}
 include "header.php";
 include "model/proses.php";
 $data =read("SELECT pegawai.nip,pegawai.nama_lengkap,absensi.tanggal,absensi.keterangan FROM `absensi` LEFT JOIN pegawai on absensi.pegawai_id=pegawai.id");
@@ -6,7 +10,7 @@ $data =read("SELECT pegawai.nip,pegawai.nama_lengkap,absensi.tanggal,absensi.ket
 <div class="container">
 	<div class="container-fluid home-bg">
 		<div class="card">
-			<div class="card-header">Laporan Absensi</div>
+			<div class="card-header card-header-cos">Laporan Absensi</div>
 			<div class="card-body">
 				<table class="table display" id="absensi">
 					<thead class="thead-dark">

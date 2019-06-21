@@ -1,4 +1,8 @@
 <?php 
+session_start();
+if(!isset($_SESSION["username"])){
+    header("Location:login.php");
+}
 include 'model/proses.php';
 $id =$_POST['id'];
 $ket =$_POST['keterangan'];

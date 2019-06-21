@@ -1,4 +1,8 @@
 <?php
+session_start();
+if(!isset($_SESSION["username"])){
+    header("Location:login.php");
+}
     include "model/proses.php";
     $data = read("SELECT * FROM `pegawai` INNER JOIN jabatan on pegawai.jabatan_id = jabatan.id");
     include "header.php";

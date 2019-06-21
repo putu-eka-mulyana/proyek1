@@ -1,4 +1,8 @@
 <?php 
+session_start();
+if(!isset($_SESSION["username"])){
+    header("Location:login.php");
+}
 include "model/proses.php";
 $jabatan =$_POST["tambah_jabatan"];
 

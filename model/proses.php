@@ -36,4 +36,12 @@
         else return false;
     }   
 }
+function cek_user($value){
+    global $con;
+    $query= "SELECT * FROM admin WHERE username='$value'";
+    if($result = mysqli_query($con,$query)){
+        if(mysqli_num_rows($result)!= 0 ) return true;
+        else return false;
+    }   
+}
 ?>

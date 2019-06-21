@@ -1,6 +1,8 @@
+<?php 
+// include 'proses_login.php';
+ ?>
 <!doctype html>
 <html lang="en">
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -19,16 +21,18 @@
                     Form Login
                 </div>
                 <div class="card-body">
-                   <form>
+                   <form  action="proses_login.php" method="post">
                        <div class="form-group">
                            <label for="username">Username</label>
-                           <input type="text" class="form-control" name="username">
+                           <input type="text" class="form-control" name="username" id="username">
+                           <!-- <span style="color: red"><?=$errUser?></span> -->
                        </div>
                        <div class="form-group">
                             <label for="password">password</label>
                             <input type="password" name="password" id="password" class="form-control">
+                            <!-- <span style="color: red"><?=$errPass?></span> -->
                        </div>
-                       <button type="submit" class="btn btn-cost btn-lg btn-block">Login</button>
+                       <button type="submit" class="btn btn-cost btn-lg btn-block" name="sumbit" id="sumbit" value="submit">Login</button>
                    </form>
                 </div>
             </div>

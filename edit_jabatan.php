@@ -1,4 +1,8 @@
 <?php 
+session_start();
+if(!isset($_SESSION["username"])){
+    header("Location:login.php");
+}
 include "model/proses.php";
 $id =$_GET['id'];
 $data = read("SELECT * FROM jabatan where id='$id'")[0];

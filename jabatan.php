@@ -1,4 +1,8 @@
 <?php 
+session_start();
+if(!isset($_SESSION["username"])){
+    header("Location:login.php");
+}
 include "model/proses.php";
 $data = read("SELECT jabatan.id,jabatan.nama_jabatan,COUNT(pegawai.id) FROM `jabatan` LEFT JOIN pegawai ON jabatan.id = pegawai.jabatan_id GROUP BY jabatan.nama_jabatan");
 include "header.php";

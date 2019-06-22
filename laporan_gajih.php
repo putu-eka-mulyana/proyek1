@@ -22,6 +22,7 @@ $data =read("SELECT slip_gajih.id,slip_gajih.tanggal,slip_gajih.total_gajih,slip
 						<th scope="col">Gajih</th>
 						<th scope="col">Potongan</th>
 						<th scope="col">Total</th>
+						<th scope="col">Action</th>
 					</tr>	
 				</thead>
 				<tbody>
@@ -37,6 +38,7 @@ $data =read("SELECT slip_gajih.id,slip_gajih.tanggal,slip_gajih.total_gajih,slip
 							<td><?=$v[2]?></td>
 							<td><?=$v[3]?></td>
 							<td><?=$v[2]-$v[3]?></td>
+							<td><a href="print_slip.php?id=<?=$v[0]?>" class="btn btn-danger">Print</a></td>
 						</tr>
 						<?php
 						$no++; 
